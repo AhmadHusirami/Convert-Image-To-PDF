@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    overflow: hidden;
+}
+
+.container-fluid {
+    background-color: #343a40;
+    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid img {
+    width: 70px;
+    margin-top: 18px;
+}
+
+.container-text {
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: 10%;
+    margin-top: 19px;
+    font-weight: bolder;
+}
+
+#addImageBtn {
+    font-size: 16px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: bisque;
+    width: 350px;
+    padding: 20px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: calc(100vh - 50px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.paper-size-container {
+    margin-top: 20px;
+}
+
+.paper-size-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.paper-size-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    background-color: white;
+    color: #343a40;
+}
+
+
+.footer{
+    display: flex;
+    margin-top: 145%;
+    margin-left: 20px;
+}
+.footer_name{
+    text-decoration: none;
+    color: gray;
+    margin-left: 3px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        background-color: bisque;
+        width: 150px;
+        padding: 20px;
+        position: absolute;
+        top: 4px;
+        right: 0;
+        height: calc(100vh - 50px);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        display:block;
+        margin-top: 145%;
+        margin-left: 20px;
+    }
+}
